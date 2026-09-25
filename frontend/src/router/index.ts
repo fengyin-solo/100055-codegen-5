@@ -19,6 +19,7 @@ const Alarm = () => import('@/views/alarm/index.vue')
 const Verify = () => import('@/views/verify/index.vue')
 const Shift = () => import('@/views/shift/index.vue')
 const Assess = () => import('@/views/assess/index.vue')
+const Insure = () => import('@/views/insure/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +43,7 @@ const router = createRouter({
     { path: '/verify', name: 'verify', component: Verify },
     { path: '/shift', name: 'shift', component: Shift },
     { path: '/assess', name: 'assess', component: Assess },
+    { path: '/insure', name: 'insure', component: Insure },
   ],
 })
 

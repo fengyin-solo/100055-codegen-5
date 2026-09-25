@@ -244,3 +244,15 @@ class AssessEntry(BaseModel):
     field_5: str | None = None  # 评估人员
     field_6: str | None = None  # 评估结论
     field_7: str | None = None  # 评估状态
+
+class InsureEntry(BaseModel):
+    """保险案件明细结构。"""
+
+    field_0: str | None = None  # 案件编号
+    field_1: str | None = None  # 事故名称
+    field_2: str | None = None  # 出险时间
+    field_3: str | None = None  # 报案人
+    field_4: str | None = None  # 设备台数
+    field_5: str | None = None  # 定损合计
+    field_6: str | None = None  # 赔款合计
+    field_7: str | None = None  # 案件状态
