@@ -33,3 +33,30 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.ok-text { color: #027a48; }
+.muted-text { color: var(--muted); font-size: 12px; }
+.row-active td { background: #f0f6ff; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; background: #eef2f6; }
+.tag[data-status="已报案"], .tag[data-status="待定损"] { background: #fff4e5; color: #b54708; }
+.tag[data-status="定损中"] { background: #e0eaff; color: #1f6feb; }
+.tag[data-status="待赔付"], .tag[data-status="已定损"] { background: #e6f4ea; color: #027a48; }
+.tag[data-status="已结案"] { background: #eef2f6; color: var(--muted); }
+.tag[data-status="已拒赔"] { background: #fee4e2; color: #b42318; }
+.detail-panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-top: 12px; }
+.detail-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.detail-head h3 { margin: 0; font-size: 15px; }
+.inline-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; border: 1px dashed var(--border); border-radius: 8px; padding: 10px; margin-top: 10px; }
+.inline-form label { display: flex; flex-direction: column; font-size: 12px; color: var(--muted); gap: 4px; }
+.log-title { margin: 12px 0 6px; font-size: 13px; }
+.log-list { list-style: none; margin: 0; padding: 0; font-size: 12px; }
+.log-list li { display: flex; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--border); }
+.log-time { color: var(--muted); min-width: 140px; }
+.log-operator { min-width: 80px; font-weight: 600; }
+.log-action { min-width: 64px; color: var(--brand); }
+.log-note { color: var(--muted); }
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.4); display: flex; align-items: center; justify-content: center; z-index: 10; }
+.modal-card { background: #fff; border-radius: 10px; padding: 16px; width: 420px; display: flex; flex-direction: column; gap: 10px; }
+.modal-card h3 { margin: 0; font-size: 15px; }
+.form-item span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-item input, .form-item textarea { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+.modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
